@@ -23,3 +23,10 @@ cd cdb
 # Installation de l'application
 yarn install
 ```
+
+## Démarrage
+
+```bash
+# Lancement de l'applicationen mode développement
+yarn start
+```
