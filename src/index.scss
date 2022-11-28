@@ -1,0 +1,170 @@
+// src/index.scss
+
+$color1: hsla(354, 96, 38, 1);
+$color2: hsla(28, 96, 22, 1);
+$color3: hsla(0, 96, 48, 1);
+$color4: hsla(0, 96, 17, 1);
+$color5: hsla(0, 96, 7, 1);
+
+$nuance1: #730202;
+$nuance2: #f44e4e;
+$nuance3: #f20505;
+$nuance4: #732525;
+$nuance5: #bf0404;
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+$enable-negative-margins: true;
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "color1": $color1,
+  "color2": $color2,
+  "color3": $color3,
+  "color4": $color4,
+  "color5": $color5,
+  "nuance1": $nuance1,
+  "nuance2": $nuance2,
+  "nuance3": $nuance3,
+  "nuance4": $nuance4,
+  "nuance5": $nuance5,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+@import "bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$has-fixed-top: 60px;
+
+html {
+  padding-top: $has-fixed-top;
+  height: auto;
+  width: auto;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: relative;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100vw;
+  height: 100%;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  @extend .fixed-top;
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.8rem;
+    font-family: Baskervville;
+    color: lighten($color2, 50%);
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 1.2rem;
+  }
+}
+
+main {
+  position: relative;
+  min-height: calc(100vh - $has-fixed-top);
+}
+
+footer {
+  min-height: 60px;
+  color: $light;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 3rem;
+  font-family: Baskervville;
+  color: lighten($color2, lightness($color2));
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.5rem;
+}
+
+.hero {
+  @extend .p-3;
+  min-height: 240px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .photo {
+    @extend .img-fluid;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+}
+
+.hero-text {
+  color: $light;
+}
+
+.card {
+  // @extend .shadow;
+  // @extend .border-0;
+  background-color: $nuance5;
+  color: $light;
+
+  h1,
+  h2,
+  h3 {
+    font-size: 3rem;
+    font-family: Baskervville;
+    color: lighten($color2, 50%);
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 1.5rem;
+  }
+}
