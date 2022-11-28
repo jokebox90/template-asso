@@ -17,10 +17,10 @@ Récupération et installation des fichiers sources :
 
 ```bash
 # Clone
-git clone https://github.com/jokebox90/cdb.git
+git clone https://github.com/jokebox90/template-asso.git
 
 # Accès au dossier du projet
-cd cdb
+cd template-asso
 
 # Installation de l'application
 yarn install
