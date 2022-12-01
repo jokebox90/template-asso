@@ -11,8 +11,21 @@ export const Hero = (props) => {
   className.push("mb-5");
   className.push("pt-5");
 
+  const bgPosition = _.get(props, "bgPosition", "end");
+  const bgOpacity = _.get(props, "bgOpacity", 0.5);
+  const bgColor = `rgba(0, 0, 0, ${bgOpacity})`;
+
   return (
     <div className={_.join(className, " ")}>
+      {props.bgImage ? (
+        <div
+          className="hero-bg-image"
+          css={{ alignItems: bgPosition }}
+        >
+          <img src={props.bgImage} alt="" />
+          <div className="hero-bg-overlay" css={{ backgroundColor: bgColor }} />
+        </div>
+      ) : null}
       <div className="container mx-auto">
         <div className="row g-3">{props.children}</div>
       </div>

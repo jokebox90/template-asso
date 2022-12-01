@@ -143,6 +143,7 @@ a {
 
 .hero {
   @extend .p-3;
+  position: relative;
   min-height: 240px;
   background-color: $hero-bg-color;
   background-image: $linear-gradient;
@@ -151,6 +152,10 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+
+  * {
+    z-index: 990;
+  }
 
   .photo {
     @extend .img-fluid;
@@ -167,6 +172,32 @@ a {
       text-transform: uppercase;
     }
   }
+}
+
+.hero-bg-image {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  // align-items: end;
+
+  img {
+    z-index: 0;
+    position: relative;
+    min-height: 120%;
+    width: 120%;
+  }
+}
+
+.hero-bg-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 980;
 }
 
 .hero-title {
