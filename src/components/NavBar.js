@@ -17,7 +17,7 @@ export const NavBrand = ({ title, ...iconProps }) => {
 
 export const NavItem = (props) => {
   const handleNavLink = ({ isActive }) => {
-    return isActive ? "nav-link active" : "nav-link";
+    return isActive ? "nav-link active px-3" : "nav-link px-3";
   };
 
   return (
@@ -47,14 +47,14 @@ export const Navigation = (props) => {
         aria-expanded={collapse ? "false" : "true"}
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-name"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
 
       <div
         className={collapse ? "collapse navbar-collapse" : "navbar-collapse"}
         id="mainNavigation"
       >
-        <ul className="navbar-nav mb-2 mb-lg-0 d-flex justify-content-center px-3">
+        <ul className="navbar-nav mb-2 mb-lg-0 d-flex justify-content-center">
           {props.children({ collapse: handleCollapse })}
         </ul>
       </div>
