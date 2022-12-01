@@ -29,7 +29,7 @@ const Accueil = () => {
             Modèle de pages Web à destination des métiers de l'art et de la
             culture. Les couleurs, les polices et les illustrations sont étudiés
             pour s'adapter au domaine. Les informations et les éléments de
-            navigations sont disposées pour mettre en valeur une activité
+            navigations sont disposés pour mettre en valeur une activité
             particulière avec le maximum de réalisme.
           </HeroText>
         </HeroContent>
