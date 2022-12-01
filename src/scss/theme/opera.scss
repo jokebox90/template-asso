@@ -1,0 +1,54 @@
+// src/scss/_theme.scss
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// THEME: Opéra
+$color1:                      #f00505;
+$color2:                      #fb8b27;
+$color3:                      #be0416;
+$color4:                      #550202;
+$color5:                      #230101;
+$color:                       #fcfcfc;
+
+@import "../shades";
+
+$main-bg-color:               $color2-100;
+$main-color:                  $color;
+
+$navbar-bg-color:             $color3;
+$navbar-font-color:           $color2-400;
+$navbar-link-hover:           $color2-200;
+$navbar-link-hover-bg:        $color3-700;
+$navbar-link-active:          $color2-400;
+$navbar-link-active-bg:       $color3-700;
+$navbar-link-active-hover:    $color2-200;
+$navbar-link-active-hover-bg: $color3-700;
+
+$headings-font-size:          1.8rem;
+$headings-small-font-size:    1.4rem;
+$headings-font-family:        Baskervville;
+$headings-font-style:         null;
+$headings-font-weight:        700;
+$headings-line-height:        1.2;
+$headings-color:              $color2-500;
+$headings-lead-color:         $color5;
+
+$brand-font-color:            $color2-400;
+$brand-family:                Baskervville;
+$brand-font-size:             1.8rem;
+
+$card-color:                  $color2-100;
+$card-bg-color:               $color3-600;
+$card-title-size:             1.4rem;
+$card-title-color:            $color2-500;
+$card-button-color:           $color2;
+$card-button-bg-color:        $color3-800;
+$card-button-hover:           $color2-200;
+$card-button-hover-bg:        $color3-900;
+
+$hero-headings-color:         $color2;
+$hero-headings-size:          3rem;
+$hero-color:                  $color2-100;
+$hero-font-size:              1rem;
+$hero-bg-color:               $color5;

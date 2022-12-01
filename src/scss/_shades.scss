@@ -1,0 +1,66 @@
+// src/solors.css
+
+$color1-100: tint-color($color1, 80%);
+$color1-200: tint-color($color1, 60%);
+$color1-300: tint-color($color1, 40%);
+$color1-400: tint-color($color1, 20%);
+$color1-500: $color1;
+$color1-600: shade-color($color1, 20%);
+$color1-700: shade-color($color1, 40%);
+$color1-800: shade-color($color1, 60%);
+$color1-900: shade-color($color1, 80%);
+
+$color1-dark: $color1-700;
+$color1-light: $color1-300;
+
+$color2-100: tint-color($color2, 80%);
+$color2-200: tint-color($color2, 60%);
+$color2-300: tint-color($color2, 40%);
+$color2-400: tint-color($color2, 20%);
+$color2-500: $color2;
+$color2-600: shade-color($color2, 20%);
+$color2-700: shade-color($color2, 40%);
+$color2-800: shade-color($color2, 60%);
+$color2-900: shade-color($color2, 80%);
+
+$color2-dark: $color2-700;
+$color2-light: $color2-300;
+
+$color3-100: tint-color($color3, 80%);
+$color3-200: tint-color($color3, 60%);
+$color3-300: tint-color($color3, 40%);
+$color3-400: tint-color($color3, 20%);
+$color3-500: $color3;
+$color3-600: shade-color($color3, 20%);
+$color3-700: shade-color($color3, 40%);
+$color3-800: shade-color($color3, 60%);
+$color3-900: shade-color($color3, 80%);
+
+$color3-dark: $color3-700;
+$color3-light: $color3-300;
+
+$color4-100: tint-color($color4, 80%);
+$color4-200: tint-color($color4, 60%);
+$color4-300: tint-color($color4, 40%);
+$color4-400: tint-color($color4, 20%);
+$color4-500: $color4;
+$color4-600: shade-color($color4, 20%);
+$color4-700: shade-color($color4, 40%);
+$color4-800: shade-color($color4, 60%);
+$color4-900: shade-color($color4, 80%);
+
+$color4-dark: $color4-700;
+$color4-light: $color4-300;
+
+$color5-100: tint-color($color5, 80%);
+$color5-200: tint-color($color5, 60%);
+$color5-300: tint-color($color5, 40%);
+$color5-400: tint-color($color5, 20%);
+$color5-500: $color5;
+$color5-600: shade-color($color5, 20%);
+$color5-700: shade-color($color5, 40%);
+$color5-800: shade-color($color5, 60%);
+$color5-900: shade-color($color5, 80%);
+
+$color5-dark: $color5-700;
+$color5-light: $color5-300;

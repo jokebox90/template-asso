@@ -2,13 +2,18 @@
 
 import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
+import Page from "../components/Page";
+import Header from "./Header";
 import Footer from "./Footer";
 
 const Layout = () => {
   return (
     <Fragment>
-      <Outlet />
-      <Footer />
+      <Page>
+        <Header />
+        <Outlet />
+        <Footer />
+      </Page>
     </Fragment>
   );
 };

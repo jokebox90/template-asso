@@ -8,7 +8,11 @@ export const Card = (props) => {
   const row = _.get(props, "row", false) ? true : false;
   const image = props.image ? (
     <div className="p-0 m-0" css={{ overflow: "hidden" }}>
-      <img className={row ? "img-fluid rounded shadow" : "img-fluid"} src={props.image} alt="" />
+      <img
+        className={row ? "img-fluid rounded shadow" : "img-fluid"}
+        src={props.image}
+        alt=""
+      />
     </div>
   ) : null;
   const body = <div className="card-body">{props.children}</div>;
@@ -16,7 +20,6 @@ export const Card = (props) => {
   return (
     <div
       className="card shadow border-0"
-      css={{ fontSize: "0.8rem", "h1,h2,h3": { fontSize: "1.8rem" } }}
     >
       <div className="row g-0 p-0">
         {image ? (
@@ -43,22 +46,21 @@ export const Card = (props) => {
 
 export const CardTitle = (props) => {
   return (
-    <h3
-      className="card-title"
-      css={{ fontSize: "1.8rem", fontVariant: "small-caps" }}
-    >
-      <Icon {...props}></Icon>
-      <span>{props.children}</span>
-    </h3>
+    <div className="card-title d-flex">
+      <Icon
+        name={props.name}
+        collection={props.collection}
+      />
+      <h3>
+        <span>{props.children}</span>
+      </h3>
+    </div>
   );
 };
 
 export const CardText = (props) => {
   return (
-    <p
-      className="card-text"
-      css={{ fontSize: "0.8rem" }}
-    >
+    <p className="card-text" css={{ fontSize: "0.8rem" }}>
       {props.children}
     </p>
   );
@@ -66,13 +68,16 @@ export const CardText = (props) => {
 
 export const CardButton = (props) => {
   return (
-    <div className="d-flex flex-nowrap">
+    <div className="card-button d-flex flex-nowrap">
       <a
         href={props.href}
-        className="btn btn-nuance2 text-white d-flex flex-wrap"
+        className="btn shadow border-0 text-white d-flex flex-wrap"
       >
-        <Icon {...props}></Icon>
-        <span>{props.children}</span>
+        <Icon
+          name={props.name}
+          collection={props.collection}
+        />
+        {props.children}
       </a>
     </div>
   );

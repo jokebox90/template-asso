@@ -4,22 +4,14 @@ import _ from "lodash";
 import { Fragment, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Icon from "./Icon";
+// import styles from "./Navbar.module.scss";
 
-export const NavBrand = (props) => {
-  const title = _.get(props, "title", null);
-
-  return (
-    <Fragment>
-      {title ? (
-        <div className="navbar-brand ps-3">
-          <h3 className="p-0 m-0">
-            <Icon {...props}></Icon>
-
-            {title ? <span>{title}</span> : null}
-          </h3>
-        </div>
-      ) : null}
-    </Fragment>
+export const NavBrand = ({ title, ...iconProps }) => {
+  return _.isEmpty(title) ? null : (
+    <div className="navbar-brand d-flex">
+      <Icon {...iconProps}></Icon>
+      {_.isEmpty(title) ? null : <h3>{title}</h3>}
+    </div>
   );
 };
 
@@ -55,7 +47,7 @@ export const Navigation = (props) => {
         aria-expanded={collapse ? "false" : "true"}
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-name"></span>
       </button>
 
       <div
@@ -72,8 +64,6 @@ export const Navigation = (props) => {
 
 export const NavBar = (props) => {
   return (
-    <nav className="navbar navbar-expand-md navbar-dark bg-color4">
-      {props.children}
-    </nav>
+    <nav className="navbar">{props.children}</nav>
   );
 };

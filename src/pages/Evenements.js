@@ -1,4 +1,4 @@
-// src/pages/Accueil.js
+// src/pages/Evenements.js
 
 import Main from "../layouts/Main";
 import { Article } from "../components/Article";
@@ -17,12 +17,12 @@ import musicPlayer1 from "../images/music-player1.jpg";
 import musicPlayer2 from "../images/music-player2.jpg";
 import musicPlayer3 from "../images/music-player3.jpg";
 
-const Accueil = () => {
+const Evenements = () => {
   return (
     <Main>
       <Hero bgImage="" bgColor="dark" textColor="light">
         <HeroContent>
-          <HeroTitle name="music">Orchestre Symphonique Factice</HeroTitle>
+          <HeroTitle name="music">évenements</HeroTitle>
           <HeroText>
             Dolore nostrud dolore ex rebum dolor lorem magna est dolore sed
             volutpat suscipit consectetuer autem voluptua gubergren stet. At sit
@@ -126,7 +126,7 @@ const Accueil = () => {
         </Heading>
         <Content cols="2">
           <Card row image={musicPlayer3}>
-            <CardTitle name="map">Dates d'inscription</CardTitle>
+            <CardTitle>Dates d'inscription</CardTitle>
             <CardText>
               At diam sea sea voluptua dolor magna sit nostrud et at erat.
               Facilisis feugiat sit labore et et magna rebum gubergren aliquyam
@@ -195,4 +195,4 @@ const Accueil = () => {
   );
 };
 
-export default Accueil;
+export default Evenements;

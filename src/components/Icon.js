@@ -1,14 +1,36 @@
 // src/components/Icon.js
+/** @jsxImportSource @emotion/react */
 
 import _ from "lodash";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Icon = (props) => {
-  const icon = _.get(props, "icon", null);
-  const iconType = _.get(props, "iconType", "solid");
+  const name = _.get(props, "name", null);
+  const collection = _.get(props, "collection", "solid");
+  const color = _.get(props, "color", "var(--dark)");
+  const fontSize = _.get(props, "fontSize", "var(--font-size)");
 
-  return icon ? (
-    <span className="icon me-3">
-      <i className={`fa-${iconType} fa-${icon}`}></i>
+  const _collection = _.get(
+    {
+      solid: "fas",
+      brands: "fab",
+      regular: "far",
+    },
+    collection
+  );
+
+  return name ? (
+    <span
+      className="icon me-3"
+      css={{
+        color,
+        fontSize,
+      }}
+    >
+      <FontAwesomeIcon
+        icon={[_collection, name]}
+        size="1x"
+      />
     </span>
   ) : null;
 };
