@@ -1,9 +1,10 @@
 //
 
 import _ from "lodash";
-import { Fragment, useState } from "react";
+import { createRef, Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import Icon from "./Icon";
+import { Collapse } from "bootstrap";
 // import styles from "./Navbar.module.scss";
 
 export const NavBrand = ({ title, ...iconProps }) => {
@@ -30,10 +31,10 @@ export const NavItem = (props) => {
 };
 
 export const Navigation = (props) => {
-  const [collapse, setCollapse] = useState(true);
+  const navbarRef = createRef();
 
   const handleCollapse = () => {
-    setCollapse(!collapse);
+    new Collapse(navbarRef.current);
   };
 
   return (
@@ -44,15 +45,16 @@ export const Navigation = (props) => {
         data-bs-toggle="collapse"
         data-bs-target="#mainNavigation"
         aria-controls="mainNavigation"
-        aria-expanded={collapse ? "false" : "true"}
+        aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span className="navbar-toggler-icon"></span>
       </button>
 
       <div
-        className={collapse ? "collapse navbar-collapse" : "navbar-collapse"}
+        className="collapse navbar-collapse"
         id="mainNavigation"
+        ref={navbarRef}
       >
         <ul className="navbar-nav mb-2 mb-lg-0 d-flex justify-content-center">
           {props.children({ collapse: handleCollapse })}
@@ -63,7 +65,5 @@ export const Navigation = (props) => {
 };
 
 export const NavBar = (props) => {
-  return (
-    <nav className="navbar">{props.children}</nav>
-  );
+  return <nav className="navbar">{props.children}</nav>;
 };
