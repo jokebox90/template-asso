@@ -43,7 +43,7 @@ const Programme = () => {
           stet facilisi consetetur lorem.
         </Heading>
         <Content cols="2">
-          <Card row image={musicPlayer3}>
+          <Card row image={musicPlayer1}>
             <CardTitle>Dates d'inscription</CardTitle>
             <CardText>
               At diam sea sea voluptua dolor magna sit nostrud et at erat.
@@ -56,7 +56,7 @@ const Programme = () => {
             </CardButton>
           </Card>
 
-          <Card row image={musicPlayer3}>
+          <Card row image={musicPlayer2}>
             <CardTitle>Premier trimestre</CardTitle>
             <CardText>
               Sed at clita accusam elitr invidunt sit dolores no sed dolor.
