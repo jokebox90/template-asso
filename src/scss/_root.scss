@@ -177,6 +177,7 @@ a {
   .icon {
     color: $hero-headings-color !important;
     font-size: $hero-headings-size !important;
+    font-weight: $hero-headings-weight !important;
     margin-bottom: 0 !important;
 
     &::first-letter {
