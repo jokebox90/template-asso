@@ -22,12 +22,15 @@ const Accueil = () => {
     <Main>
       <Hero bgImage="" bgColor="dark" textColor="light">
         <HeroContent>
-          <HeroTitle name="music">Orchestre Symphonique Factice</HeroTitle>
+          <HeroTitle name="music">
+            Orchestre Symphonique des Etoiles Factice
+          </HeroTitle>
           <HeroText>
-            Dolore nostrud dolore ex rebum dolor lorem magna est dolore sed
-            volutpat suscipit consectetuer autem voluptua gubergren stet. At sit
-            justo lorem eos soluta diam gubergren vel est erat. Facilisi amet
-            placerat ut aliquip ipsum amet.
+            Modèle de pages Web à destination des métiers de l'art et de la
+            culture. Les couleurs, les polices et les illustrations sont étudiés
+            pour s'adapter au domaine. Les informations et les éléments de
+            navigations sont disposées pour mettre en valeur une activité
+            particulière avec le maximum de réalisme.
           </HeroText>
         </HeroContent>
         <HeroImage src={photoHero} />

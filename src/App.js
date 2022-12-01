@@ -6,8 +6,6 @@ import Layout from "./layouts/Layout";
 import Accueil from "./pages/Accueil";
 import Programme from "./pages/Programme";
 import Evenements from "./pages/Evenements";
-import Billeterie from "./pages/Billeterie";
-import Souvenirs from "./pages/Souvenirs";
 
 export const routes = [
   {
@@ -27,16 +25,6 @@ export const routes = [
         path: "/evenements",
         title: "Evenements",
         element: <Evenements />,
-      },
-      {
-        path: "/billeterie",
-        title: "Billeterie",
-        element: <Billeterie />,
-      },
-      {
-        path: "/souvenirs",
-        title: "Souvenirs",
-        element: <Souvenirs />,
       },
     ],
   },
