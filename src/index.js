@@ -4,17 +4,21 @@ import App from "./App";
 import "bootstrap";
 import "./scss/index.scss";
 import reportWebVitals from "./reportWebVitals";
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { fas } from '@fortawesome/free-solid-svg-icons'
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
+import { MatomoProvider } from "@jonkoops/matomo-tracker-react";
+import { matomo } from "./services/matomoConfig";
 
-library.add(fab, fas, far)
+library.add(fab, fas, far);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <MatomoProvider value={matomo}>
+      <App />
+    </MatomoProvider>
   </React.StrictMode>
 );
 
