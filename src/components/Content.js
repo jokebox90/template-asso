@@ -3,14 +3,17 @@
 import _ from "lodash";
 import { useEffect, useState } from "react";
 import Masonry from "masonry-layout";
+import { useLocation } from "react-router-dom";
 
 export const Content = (props) => {
+  const location = useLocation();
   const [masonry, setMasonry] = useState(null);
 
   useEffect(() => {
     let timerID;
 
     if (!masonry) {
+      console.log("Trigger Masonry");
       timerID = setTimeout(() => {
         setMasonry(
           new Masonry(`.masonry`, {
@@ -26,7 +29,7 @@ export const Content = (props) => {
         clearTimeout(timerID);
       }
     };
-  }, [masonry, setMasonry]);
+  }, [masonry, setMasonry, location]);
 
   const cols = Math.round(Math.floor(12 / Number(_.get(props, "cols", 3))));
 
