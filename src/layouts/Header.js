@@ -8,19 +8,8 @@ import { routes } from "../App";
 const Header = (props) => {
   return (
     <header className="header">
-      <NavBar>
+      <NavBar fixedTop>
         <NavBrand title="CAC40" name="guitar" />
-        <Navigation>
-          {({ collapse }) => (
-            <Fragment>
-              {_.map(routes[0].children, (location, index) => (
-                <NavItem key={index} to={location.path} collapse={collapse}>
-                  {location.title}
-                </NavItem>
-              ))}
-            </Fragment>
-          )}
-        </Navigation>
       </NavBar>
     </header>
   );

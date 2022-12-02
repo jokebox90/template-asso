@@ -16,11 +16,12 @@ import photoHero from "../images/photo-hero.jpg";
 import musicPlayer1 from "../images/music-player1.jpg";
 import musicPlayer2 from "../images/music-player2.jpg";
 import musicPlayer3 from "../images/music-player3.jpg";
+import { Menu } from "./Menu";
 
 const Evenements = () => {
   return (
     <Main>
-      <Hero bgImage="" bgColor="dark" textColor="light">
+      <Hero bgImage="" bgColor="dark" textColor="light" hasNavBottom>
         <HeroContent>
           <HeroTitle name="music">évenements</HeroTitle>
           <HeroText>
@@ -32,6 +33,8 @@ const Evenements = () => {
         </HeroContent>
         <HeroImage src={photoHero} />
       </Hero>
+
+      <Menu navProps={{ large: true }} />
 
       <Article>
         <Heading name="calendar" heading="h2" title="Evènements">

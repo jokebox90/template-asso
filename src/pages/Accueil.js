@@ -18,11 +18,12 @@ import sport3 from "../images/sport3.jpg";
 import sport4 from "../images/sport4.jpg";
 import sport5 from "../images/sport5.jpg";
 import sport6 from "../images/sport6.jpg";
+import { Menu } from "./Menu";
 
 const Accueil = () => {
   return (
     <Main>
-      <Hero bgImage={sport1} bgColor="dark" textColor="light">
+      <Hero bgImage={sport1} bgColor="dark" textColor="light" hasNavBottom hasNavTop>
         <HeroContent>
           <HeroTitle name="music">
             Centre d'Activités Communal, les 40  chênes
@@ -36,6 +37,8 @@ const Accueil = () => {
           </HeroText>
         </HeroContent>
       </Hero>
+
+      <Menu navProps={{ centered: true }} />
 
       <Article>
         <Heading name="calendar" heading="h2" title="Evènements">
