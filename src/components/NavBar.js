@@ -40,15 +40,13 @@ export const Navigation = (props) => {
   const navClassName = [];
   navClassName.push("collapse");
   navClassName.push("navbar-collapse");
-  !_.isUndefined(props.centered) &&
-    navClassName.push("justify-content-center");
+  !_.isUndefined(props.centered) && navClassName.push("justify-content-center");
 
   const btnClassName = [];
   btnClassName.push("navbar-toggler");
   btnClassName.push("me-3");
   btnClassName.push("ms-auto");
-  !_.isUndefined(props.large) &&
-    btnClassName.push("mt-5");
+  !_.isUndefined(props.large) && btnClassName.push("mt-5");
 
   return (
     <Fragment>
@@ -79,7 +77,11 @@ export const Navigation = (props) => {
 
 export const NavBar = (props) => {
   const className = [];
-  className.push('navbar');
-  props.fixedTop && className.push('fixed-top');
-  return <nav className={_.join(className, " ")}>{props.children}</nav>;
+  className.push("navbar");
+  props.fixedTop && className.push("fixed-top");
+  return (
+    <nav className={_.join(className, " ")}>
+      <div className="container">{props.children}</div>
+    </nav>
+  );
 };
