@@ -8,12 +8,15 @@ export const Hero = (props) => {
   const className = [];
   className.push("hero");
   className.push("container-fluid");
-  className.push("mb-5");
-  className.push("pt-5");
 
+  const hasNavTop = _.get(props, "hasNavTop", false);
+  const hasNavBottom = _.get(props, "hasNavBottom", false);
   const bgPosition = _.get(props, "bgPosition", "end");
   const bgOpacity = _.get(props, "bgOpacity", 0.5);
   const bgColor = `rgba(0, 0, 0, ${bgOpacity})`;
+
+  // !hasNavTop && className.push("mt-5");
+  !hasNavBottom && className.push("mb-5");
 
   return (
     <div className={_.join(className, " ")}>

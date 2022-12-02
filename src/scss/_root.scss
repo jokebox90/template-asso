@@ -52,7 +52,7 @@ body {
 
 main {
   position: relative;
-  min-height: calc(100vh - $has-fixed-top);
+  min-height: 80vh;
   background-color: $main-bg-color;
   background-image: $linear-gradient;
   color: $main-color;
@@ -65,6 +65,7 @@ footer {
   padding-right: 3.6rem !important;
   min-height: 60px;
   color: $light;
+  background-color: $footer-bg-color !important;
 
   p {
     margin: 0;
@@ -98,7 +99,6 @@ a {
 }
 
 .navbar {
-  @extend .fixed-top;
   @extend .d-flex;
   @extend .navbar, .navbar-expand-md, .navbar-light;
 
