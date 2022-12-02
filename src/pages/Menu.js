@@ -1,7 +1,7 @@
 // src/layouts/Menu.js
 
 import { Fragment } from "react";
-import { NavBar, NavBrand, Navigation, NavItem } from "../components/NavBar";
+import { NavBar, Navigation, NavItem } from "../components/NavBar";
 import { routes } from "../App";
 import _ from "lodash";
 

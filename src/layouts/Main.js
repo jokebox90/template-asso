@@ -1,7 +1,5 @@
 // src/layouts/Main.js
 
-import _ from "lodash";
-
 const Main = (props) => {
   return (
     <main className="main pb-5">

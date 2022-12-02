@@ -1,9 +1,6 @@
 // src/Header.js
 
-import _ from "lodash";
-import { Fragment } from "react";
-import { NavBar, NavBrand, Navigation, NavItem } from "../components/NavBar";
-import { routes } from "../App";
+import { NavBar, NavBrand } from "../components/NavBar";
 
 const Header = (props) => {
   return (
