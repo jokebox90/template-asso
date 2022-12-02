@@ -9,7 +9,7 @@ export const Hero = (props) => {
   className.push("hero");
   className.push("container-fluid");
 
-  const hasNavTop = _.get(props, "hasNavTop", false);
+  // const hasNavTop = _.get(props, "hasNavTop", false);
   const hasNavBottom = _.get(props, "hasNavBottom", false);
   const bgPosition = _.get(props, "bgPosition", "end");
   const bgOpacity = _.get(props, "bgOpacity", 0.5);
