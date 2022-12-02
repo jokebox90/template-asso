@@ -1,0 +1,50 @@
+// src/scss/_theme.scss
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:ital@0;1&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$color:                       #333333;
+
+$main-bg-color:               $color4-100;
+$main-color:                  $color;
+
+$headings-font-size:          1.8rem;
+$headings-small-font-size:    1.4rem;
+$headings-font-family:        Oswald;
+$headings-font-style:         null;
+$headings-font-weight:        700;
+$headings-line-height:        1.2;
+$headings-color:              $color2-600;
+$headings-lead-color:         $main-color;
+
+$navbar-bg-color:             $color1;
+$navbar-font-color:           $color3-800;
+$navbar-link-hover:           $color3-900;
+$navbar-link-hover-bg:        $color3-600;
+$navbar-link-active:          $color3-100;
+$navbar-link-active-bg:       $color3-700;
+$navbar-link-active-hover:    $color3-200;
+$navbar-link-active-hover-bg: $color3-800;
+
+$brand-font-color:              $color2-600;
+$brand-family:             Oswald;
+$brand-font-size:               1.8rem;
+
+$card-color:                  $color;
+$card-bg-color:               $color3;
+$card-title-size:             1.4rem;
+$card-title-color:            $color4-400;
+$card-button-bg-color:        $color5;
+$card-button-color:           $color2;
+$card-button-hover:           $color3-900;
+$card-button-hover-bg:        $color3-600;
+$card-button-active:          $color3-100;
+$card-button-active-bg:       $color3-700;
+$card-button-active-hover:    $color3-200;
+$card-button-active-hover-bg: $color3-800;
+
+$hero-headings-color:         $color4;
+$hero-headings-size:          3rem;
+$hero-color:                  $color4;
+$hero-font-size:              1rem;
+$hero-bg-color:               $color2;

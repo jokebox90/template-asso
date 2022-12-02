@@ -62,7 +62,7 @@ const Accueil = () => {
             <CardButton href="#">Lire la suite</CardButton>
           </Card>
 
-          <Card image={sport2}>
+          <Card image={sport3}>
             <CardTitle name="children">Animations</CardTitle>
             <CardText>
               Cum sea no te. At ea et ea consetetur justo et rebum ea et quis
@@ -73,7 +73,7 @@ const Accueil = () => {
             <CardButton href="#">Lire la suite</CardButton>
           </Card>
 
-          <Card image={sport2}>
+          <Card image={sport4}>
             <CardTitle name="face-surprise">Insolites</CardTitle>
             <CardText>
               Et vero eirmod quis lorem et amet eos amet aliquip amet sed et duo
@@ -88,7 +88,7 @@ const Accueil = () => {
             <CardButton href="#">Lire la suite</CardButton>
           </Card>
 
-          <Card image={sport2}>
+          <Card image={sport5}>
             <CardTitle name="comments">Portes-ouvertes</CardTitle>
             <CardText>
               Facilisis takimata diam quod amet diam sed no justo. Suscipit
@@ -99,7 +99,7 @@ const Accueil = () => {
             <CardButton href="#">Lire la suite</CardButton>
           </Card>
 
-          <Card image={sport2}>
+          <Card image={sport6}>
             <CardTitle name="fly" collection="brands">
               Voyages
             </CardTitle>
@@ -143,7 +143,7 @@ const Accueil = () => {
             </CardButton>
           </Card>
 
-          <Card row image={sport2}>
+          <Card row image={sport3}>
             <CardTitle>Premier trimestre</CardTitle>
             <CardText>
               Sed at clita accusam elitr invidunt sit dolores no sed dolor.
@@ -156,7 +156,7 @@ const Accueil = () => {
             </CardButton>
           </Card>
 
-          <Card row image={sport2}>
+          <Card row image={sport4}>
             <CardTitle>été</CardTitle>
             <CardText>
               In delenit ut autem volutpat ipsum iusto eos nisl et eirmod vero
