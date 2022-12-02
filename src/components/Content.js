@@ -13,7 +13,6 @@ export const Content = (props) => {
     let timerID;
 
     if (!masonry) {
-      console.log("Trigger Masonry");
       timerID = setTimeout(() => {
         setMasonry(
           new Masonry(`.masonry`, {

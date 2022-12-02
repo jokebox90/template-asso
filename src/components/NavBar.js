@@ -37,10 +37,21 @@ export const Navigation = (props) => {
     new Collapse(navbarRef.current);
   };
 
+  const navClassName = [];
+  navClassName.push("collapse");
+  navClassName.push("navbar-collapse");
+  !_.isUndefined(props.centered) && navClassName.push("justify-content-center");
+
+  const btnClassName = [];
+  btnClassName.push("navbar-toggler");
+  btnClassName.push("me-3");
+  btnClassName.push("ms-auto");
+  !_.isUndefined(props.large) && btnClassName.push("mt-5");
+
   return (
     <Fragment>
       <button
-        className="navbar-toggler me-3"
+        className={_.join(btnClassName, " ")}
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#mainNavigation"
@@ -52,11 +63,11 @@ export const Navigation = (props) => {
       </button>
 
       <div
-        className="collapse navbar-collapse"
+        className={_.join(navClassName, " ")}
         id="mainNavigation"
         ref={navbarRef}
       >
-        <ul className="navbar-nav mb-2 mb-lg-0 d-flex justify-content-center">
+        <ul className="navbar-nav mb-2 mb-lg-0">
           {props.children({ collapse: handleCollapse })}
         </ul>
       </div>
@@ -65,5 +76,12 @@ export const Navigation = (props) => {
 };
 
 export const NavBar = (props) => {
-  return <nav className="navbar">{props.children}</nav>;
+  const className = [];
+  className.push("navbar");
+  props.fixedTop && className.push("fixed-top");
+  return (
+    <nav className={_.join(className, " ")}>
+      <div className="container">{props.children}</div>
+    </nav>
+  );
 };

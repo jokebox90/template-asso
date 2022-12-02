@@ -8,7 +8,7 @@ import { routes } from "../App";
 const Header = (props) => {
   return (
     <header className="header">
-      <NavBar>
+      <NavBar fixedTop>
         <NavBrand title="OSEF" name="guitar" />
         <Navigation>
           {({ collapse }) => (
