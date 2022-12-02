@@ -4,12 +4,7 @@ import Main from "../layouts/Main";
 import { Article } from "../components/Article";
 import { Heading } from "../components/Heading";
 import { Content } from "../components/Content";
-import {
-  Hero,
-  HeroContent,
-  HeroText,
-  HeroTitle,
-} from "../components/Hero";
+import { Hero, HeroContent, HeroText, HeroTitle } from "../components/Hero";
 import { Card, CardButton, CardText, CardTitle } from "../components/Card";
 
 import sport1 from "../images/sport1.jpg";
@@ -23,25 +18,31 @@ import { Menu } from "./Menu";
 const Accueil = () => {
   return (
     <Main>
-      <Hero bgImage={sport1} bgColor="dark" textColor="light" hasNavBottom hasNavTop>
+      <Hero
+        bgImage={sport1}
+        bgColor="dark"
+        textColor="light"
+        hasNavBottom
+        hasNavTop
+      >
         <HeroContent>
-          <HeroTitle name="music">
-            Centre d'Activités Communal, les 40  chênes
+          <HeroTitle name="volleyball">
+            Centre d'Activités Communal des 40 chênes
           </HeroTitle>
           <HeroText>
-            Modèle de pages Web à destination des métiers de l'art et de la
-            culture. Les couleurs, les polices et les illustrations sont étudiés
-            pour s'adapter au domaine. Les informations et les éléments de
+            Modèle de pages Web à d'activités sportives de pleine nature. Les
+            couleurs, les polices et les illustrations sont étudiés pour
+            s'adapter au domaine. Les informations et les éléments de
             navigations sont disposés pour mettre en valeur une activité
             particulière avec le maximum de réalisme.
           </HeroText>
         </HeroContent>
       </Hero>
 
-      <Menu navProps={{ centered: true }} />
+      <Menu />
 
       <Article>
-        <Heading name="calendar" heading="h2" title="Evènements">
+        <Heading name="ranking-star" heading="h2" title="Rencontres sportives">
           Nonumy dolore accumsan. At minim dolore. Sed et et ipsum diam ex
           lobortis dolore dignissim doming dolore est ipsum consetetur duo.
           Aliquam takimata sadipscing est magna labore dolor amet ea molestie.
@@ -49,7 +50,7 @@ const Accueil = () => {
         </Heading>
         <Content cols="3">
           <Card image={sport2}>
-            <CardTitle name="users-line">Concerts</CardTitle>
+            <CardTitle name="users-line">Compétitions</CardTitle>
             <CardText>
               At diam sea sea voluptua dolor magna sit nostrud et at erat.
               Facilisis feugiat sit labore et et magna rebum gubergren aliquyam
@@ -61,22 +62,22 @@ const Accueil = () => {
               vulputate est dolor diam rebum rebum sea duo sanctus dolore sit at
               adipiscing no dolor aliquyam at.
             </CardText>
-            <CardButton href="#">Lire la suite</CardButton>
+            <CardButton name="swatchbook" href="#">Lire la suite</CardButton>
           </Card>
 
           <Card image={sport3}>
-            <CardTitle name="children">Animations</CardTitle>
+            <CardTitle name="shoe-prints">Tennis</CardTitle>
             <CardText>
               Cum sea no te. At ea et ea consetetur justo et rebum ea et quis
               vero sadipscing tempor lorem justo magna enim. Kasd diam accumsan
               diam dolor nonumy zzril. Ipsum eos sit sit ea ad voluptua sit.
               Amet nulla ea sed ipsum duo erat lorem ipsum.
             </CardText>
-            <CardButton href="#">Lire la suite</CardButton>
+            <CardButton name="swatchbook" href="#">Lire la suite</CardButton>
           </Card>
 
           <Card image={sport4}>
-            <CardTitle name="face-surprise">Insolites</CardTitle>
+            <CardTitle name="futbol">Football</CardTitle>
             <CardText>
               Et vero eirmod quis lorem et amet eos amet aliquip amet sed et duo
               invidunt et. Nibh facilisi sit et liber amet tempor illum. Justo
@@ -87,23 +88,23 @@ const Accueil = () => {
               sit voluptua kasd vero hendrerit enim sit consetetur consequat
               feugait eirmod amet. Sit est diam dolore elitr ut.
             </CardText>
-            <CardButton href="#">Lire la suite</CardButton>
+            <CardButton name="swatchbook" href="#">Lire la suite</CardButton>
           </Card>
 
           <Card image={sport5}>
-            <CardTitle name="comments">Portes-ouvertes</CardTitle>
+            <CardTitle name="person-biking">VTT</CardTitle>
             <CardText>
               Facilisis takimata diam quod amet diam sed no justo. Suscipit
               labore in clita gubergren voluptua eirmod voluptua sed tation no
               takimata clita duo et. Stet kasd amet ut laoreet kasd ut sit eos
               commodo clita clita nonumy dolor amet aliquam nisl kasd eos.
             </CardText>
-            <CardButton href="#">Lire la suite</CardButton>
+            <CardButton name="swatchbook" href="#">Lire la suite</CardButton>
           </Card>
 
           <Card image={sport6}>
-            <CardTitle name="fly" collection="brands">
-              Voyages
+            <CardTitle name="basketball">
+              Basketball
             </CardTitle>
             <CardText>
               Nibh autem amet illum vero praesent dolor lorem aliquyam gubergren
@@ -115,7 +116,7 @@ const Accueil = () => {
               gubergren sadipscing. Eum no diam luptatum dolore sit accusam est
               labore molestie exerci dolore accusam tempor et.
             </CardText>
-            <CardButton name="book" href="#">
+            <CardButton name="swatchbook" href="#">
               Lire la suite
             </CardButton>
           </Card>
@@ -140,7 +141,7 @@ const Accueil = () => {
               clita vero vero amet. Et sit erat voluptua sanctus diam dolores
               wisi invidunt ullamcorper et voluptua elitr.
             </CardText>
-            <CardButton name="book" href="#">
+            <CardButton name="swatchbook" href="#">
               Lire la suite
             </CardButton>
           </Card>
@@ -153,7 +154,7 @@ const Accueil = () => {
               consectetuer lorem. Magna et wisi tincidunt et sadipscing
               volutpat.
             </CardText>
-            <CardButton name="book" href="#">
+            <CardButton name="swatchbook" href="#">
               Lire la suite
             </CardButton>
           </Card>
@@ -166,12 +167,12 @@ const Accueil = () => {
               et lorem vel labore tempor velit erat in feugiat tempor consetetur
               cum.
             </CardText>
-            <CardButton name="book" href="#">
+            <CardButton name="swatchbook" href="#">
               Lire la suite
             </CardButton>
           </Card>
 
-          <Card row image={sport2}>
+          <Card row image={sport5}>
             <CardTitle>Automne</CardTitle>
             <CardText>
               In delenit ut autem volutpat ipsum iusto eos nisl et eirmod vero
@@ -179,12 +180,12 @@ const Accueil = () => {
               et lorem vel labore tempor velit erat in feugiat tempor consetetur
               cum.
             </CardText>
-            <CardButton name="book" href="#">
+            <CardButton name="swatchbook" href="#">
               Lire la suite
             </CardButton>
           </Card>
 
-          <Card row image={sport2}>
+          <Card row image={sport6}>
             <CardTitle>Hiver</CardTitle>
             <CardText>
               In delenit ut autem volutpat ipsum iusto eos nisl et eirmod vero
@@ -192,7 +193,7 @@ const Accueil = () => {
               et lorem vel labore tempor velit erat in feugiat tempor consetetur
               cum.
             </CardText>
-            <CardButton name="book" href="#">
+            <CardButton name="swatchbook" href="#">
               Lire la suite
             </CardButton>
           </Card>

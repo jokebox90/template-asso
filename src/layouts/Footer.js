@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="row g-0">
         <div className="col col-12 col-md-4 justify-content-between">
           <div className="d-flex flex-column flex-wrap align-items-center align-items-md-start mb-5 mb-md-0">
-            <p className="fw-bold">Orchestre Symphonique Factice</p>
+            <p className="fw-bold">Centre d'Activités Communal des 40 chênes</p>
             <p>2 rue de la Culture</p>
             <p>77777 Au-Petit-Bonheur</p>
             <p>contact@monasso.fr</p>

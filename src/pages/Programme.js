@@ -12,10 +12,13 @@ import {
   HeroTitle,
 } from "../components/Hero";
 import { Card, CardButton, CardText, CardTitle } from "../components/Card";
-import photoHero from "../images/photo-hero.jpg";
-import musicPlayer1 from "../images/music-player1.jpg";
-import musicPlayer2 from "../images/music-player2.jpg";
-import musicPlayer3 from "../images/music-player3.jpg";
+
+import sport1 from "../images/sport1.jpg";
+import sport2 from "../images/sport2.jpg";
+import sport3 from "../images/sport3.jpg";
+import sport4 from "../images/sport4.jpg";
+import sport5 from "../images/sport5.jpg";
+import sport6 from "../images/sport6.jpg";
 import { Menu } from "./Menu";
 
 const Programme = () => {
@@ -31,7 +34,7 @@ const Programme = () => {
             placerat ut aliquip ipsum amet.
           </HeroText>
         </HeroContent>
-        <HeroImage src={photoHero} />
+        <HeroImage src={sport6} />
       </Hero>
 
       <Menu navProps={{ large: true }} />
@@ -46,7 +49,7 @@ const Programme = () => {
           stet facilisi consetetur lorem.
         </Heading>
         <Content cols="2">
-          <Card row image={musicPlayer1}>
+          <Card row image={sport1}>
             <CardTitle>Dates d'inscription</CardTitle>
             <CardText>
               At diam sea sea voluptua dolor magna sit nostrud et at erat.
@@ -54,12 +57,12 @@ const Programme = () => {
               clita vero vero amet. Et sit erat voluptua sanctus diam dolores
               wisi invidunt ullamcorper et voluptua elitr.
             </CardText>
-            <CardButton name="book" href="#">
+            <CardButton name="swatchbook" href="#">
               Lire la suite
             </CardButton>
           </Card>
 
-          <Card row image={musicPlayer2}>
+          <Card row image={sport2}>
             <CardTitle>Premier trimestre</CardTitle>
             <CardText>
               Sed at clita accusam elitr invidunt sit dolores no sed dolor.
@@ -67,12 +70,12 @@ const Programme = () => {
               consectetuer lorem. Magna et wisi tincidunt et sadipscing
               volutpat.
             </CardText>
-            <CardButton name="book" href="#">
+            <CardButton name="swatchbook" href="#">
               Lire la suite
             </CardButton>
           </Card>
 
-          <Card row image={musicPlayer3}>
+          <Card row image={sport3}>
             <CardTitle>été</CardTitle>
             <CardText>
               In delenit ut autem volutpat ipsum iusto eos nisl et eirmod vero
@@ -80,12 +83,12 @@ const Programme = () => {
               et lorem vel labore tempor velit erat in feugiat tempor consetetur
               cum.
             </CardText>
-            <CardButton name="book" href="#">
+            <CardButton name="swatchbook" href="#">
               Lire la suite
             </CardButton>
           </Card>
 
-          <Card row image={musicPlayer3}>
+          <Card row image={sport4}>
             <CardTitle>Automne</CardTitle>
             <CardText>
               In delenit ut autem volutpat ipsum iusto eos nisl et eirmod vero
@@ -93,12 +96,12 @@ const Programme = () => {
               et lorem vel labore tempor velit erat in feugiat tempor consetetur
               cum.
             </CardText>
-            <CardButton name="book" href="#">
+            <CardButton name="swatchbook" href="#">
               Lire la suite
             </CardButton>
           </Card>
 
-          <Card row image={musicPlayer3}>
+          <Card row image={sport5}>
             <CardTitle>Hiver</CardTitle>
             <CardText>
               In delenit ut autem volutpat ipsum iusto eos nisl et eirmod vero
@@ -106,7 +109,7 @@ const Programme = () => {
               et lorem vel labore tempor velit erat in feugiat tempor consetetur
               cum.
             </CardText>
-            <CardButton name="book" href="#">
+            <CardButton name="swatchbook" href="#">
               Lire la suite
             </CardButton>
           </Card>

@@ -12,10 +12,14 @@ import {
   HeroTitle,
 } from "../components/Hero";
 import { Card, CardButton, CardText, CardTitle } from "../components/Card";
-import photoHero from "../images/photo-hero.jpg";
-import musicPlayer1 from "../images/music-player1.jpg";
-import musicPlayer2 from "../images/music-player2.jpg";
-import musicPlayer3 from "../images/music-player3.jpg";
+
+import sport1 from "../images/sport1.jpg";
+import sport2 from "../images/sport2.jpg";
+import sport3 from "../images/sport3.jpg";
+import sport4 from "../images/sport4.jpg";
+import sport5 from "../images/sport5.jpg";
+import sport6 from "../images/sport6.jpg";
+
 import { Menu } from "./Menu";
 
 const Evenements = () => {
@@ -31,21 +35,21 @@ const Evenements = () => {
             placerat ut aliquip ipsum amet.
           </HeroText>
         </HeroContent>
-        <HeroImage src={photoHero} />
+        <HeroImage src={sport2} />
       </Hero>
 
       <Menu navProps={{ large: true }} />
 
       <Article>
-        <Heading name="calendar" heading="h2" title="Evènements">
+        <Heading name="ranking-star" heading="h2" title="Rencontres sportives">
           Nonumy dolore accumsan. At minim dolore. Sed et et ipsum diam ex
           lobortis dolore dignissim doming dolore est ipsum consetetur duo.
           Aliquam takimata sadipscing est magna labore dolor amet ea molestie.
           Aliquyam est exerci dolores iusto.
         </Heading>
         <Content cols="3">
-          <Card image={musicPlayer1}>
-            <CardTitle name="users-line">Concerts</CardTitle>
+          <Card image={sport1}>
+            <CardTitle name="users-line">Compétitions</CardTitle>
             <CardText>
               At diam sea sea voluptua dolor magna sit nostrud et at erat.
               Facilisis feugiat sit labore et et magna rebum gubergren aliquyam
@@ -57,22 +61,22 @@ const Evenements = () => {
               vulputate est dolor diam rebum rebum sea duo sanctus dolore sit at
               adipiscing no dolor aliquyam at.
             </CardText>
-            <CardButton href="#">Lire la suite</CardButton>
+            <CardButton name="swatchbook" href="#">Lire la suite</CardButton>
           </Card>
 
-          <Card image={musicPlayer2}>
-            <CardTitle name="children">Animations</CardTitle>
+          <Card image={sport3}>
+            <CardTitle name="shoe-prints">Tennis</CardTitle>
             <CardText>
               Cum sea no te. At ea et ea consetetur justo et rebum ea et quis
               vero sadipscing tempor lorem justo magna enim. Kasd diam accumsan
               diam dolor nonumy zzril. Ipsum eos sit sit ea ad voluptua sit.
               Amet nulla ea sed ipsum duo erat lorem ipsum.
             </CardText>
-            <CardButton href="#">Lire la suite</CardButton>
+            <CardButton name="swatchbook" href="#">Lire la suite</CardButton>
           </Card>
 
-          <Card image={musicPlayer3}>
-            <CardTitle name="face-surprise">Insolites</CardTitle>
+          <Card image={sport4}>
+            <CardTitle name="futbol">Football</CardTitle>
             <CardText>
               Et vero eirmod quis lorem et amet eos amet aliquip amet sed et duo
               invidunt et. Nibh facilisi sit et liber amet tempor illum. Justo
@@ -83,24 +87,22 @@ const Evenements = () => {
               sit voluptua kasd vero hendrerit enim sit consetetur consequat
               feugait eirmod amet. Sit est diam dolore elitr ut.
             </CardText>
-            <CardButton href="#">Lire la suite</CardButton>
+            <CardButton name="swatchbook" href="#">Lire la suite</CardButton>
           </Card>
 
-          <Card image={musicPlayer1}>
-            <CardTitle name="comments">Portes-ouvertes</CardTitle>
+          <Card image={sport5}>
+            <CardTitle name="person-biking">VTT</CardTitle>
             <CardText>
               Facilisis takimata diam quod amet diam sed no justo. Suscipit
               labore in clita gubergren voluptua eirmod voluptua sed tation no
               takimata clita duo et. Stet kasd amet ut laoreet kasd ut sit eos
               commodo clita clita nonumy dolor amet aliquam nisl kasd eos.
             </CardText>
-            <CardButton href="#">Lire la suite</CardButton>
+            <CardButton name="swatchbook" href="#">Lire la suite</CardButton>
           </Card>
 
-          <Card image={musicPlayer2}>
-            <CardTitle name="fly" collection="brands">
-              Voyages
-            </CardTitle>
+          <Card image={sport6}>
+            <CardTitle name="basketball">Basketball</CardTitle>
             <CardText>
               Nibh autem amet illum vero praesent dolor lorem aliquyam gubergren
               amet sadipscing et sit erat wisi gubergren sanctus dolore. Ea nibh
@@ -111,7 +113,7 @@ const Evenements = () => {
               gubergren sadipscing. Eum no diam luptatum dolore sit accusam est
               labore molestie exerci dolore accusam tempor et.
             </CardText>
-            <CardButton name="book" href="#">
+            <CardButton name="swatchbook" href="#">
               Lire la suite
             </CardButton>
           </Card>
