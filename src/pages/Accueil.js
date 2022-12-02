@@ -7,7 +7,6 @@ import { Content } from "../components/Content";
 import {
   Hero,
   HeroContent,
-  HeroImage,
   HeroText,
   HeroTitle,
 } from "../components/Hero";
