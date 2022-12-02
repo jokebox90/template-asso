@@ -9,7 +9,7 @@ const Header = (props) => {
   return (
     <header className="header">
       <NavBar>
-        <NavBrand title="OSEF" name="guitar" />
+        <NavBrand title="CAC40" name="guitar" />
         <Navigation>
           {({ collapse }) => (
             <Fragment>

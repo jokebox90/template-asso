@@ -12,18 +12,21 @@ import {
   HeroTitle,
 } from "../components/Hero";
 import { Card, CardButton, CardText, CardTitle } from "../components/Card";
-import photoHero from "../images/photo-hero.jpg";
-import musicPlayer1 from "../images/music-player1.jpg";
-import musicPlayer2 from "../images/music-player2.jpg";
-import musicPlayer3 from "../images/music-player3.jpg";
+
+import sport1 from "../images/sport1.jpg";
+import sport2 from "../images/sport2.jpg";
+import sport3 from "../images/sport3.jpg";
+import sport4 from "../images/sport4.jpg";
+import sport5 from "../images/sport5.jpg";
+import sport6 from "../images/sport6.jpg";
 
 const Accueil = () => {
   return (
     <Main>
-      <Hero bgImage="" bgColor="dark" textColor="light">
+      <Hero bgImage={sport1} bgColor="dark" textColor="light">
         <HeroContent>
           <HeroTitle name="music">
-            Orchestre Symphonique des Etoiles Factice
+            Centre d'Activités Communal, les 40  chênes
           </HeroTitle>
           <HeroText>
             Modèle de pages Web à destination des métiers de l'art et de la
@@ -33,7 +36,6 @@ const Accueil = () => {
             particulière avec le maximum de réalisme.
           </HeroText>
         </HeroContent>
-        <HeroImage src={photoHero} />
       </Hero>
 
       <Article>
@@ -44,7 +46,7 @@ const Accueil = () => {
           Aliquyam est exerci dolores iusto.
         </Heading>
         <Content cols="3">
-          <Card image={musicPlayer1}>
+          <Card image={sport2}>
             <CardTitle name="users-line">Concerts</CardTitle>
             <CardText>
               At diam sea sea voluptua dolor magna sit nostrud et at erat.
@@ -60,7 +62,7 @@ const Accueil = () => {
             <CardButton href="#">Lire la suite</CardButton>
           </Card>
 
-          <Card image={musicPlayer2}>
+          <Card image={sport2}>
             <CardTitle name="children">Animations</CardTitle>
             <CardText>
               Cum sea no te. At ea et ea consetetur justo et rebum ea et quis
@@ -71,7 +73,7 @@ const Accueil = () => {
             <CardButton href="#">Lire la suite</CardButton>
           </Card>
 
-          <Card image={musicPlayer3}>
+          <Card image={sport2}>
             <CardTitle name="face-surprise">Insolites</CardTitle>
             <CardText>
               Et vero eirmod quis lorem et amet eos amet aliquip amet sed et duo
@@ -86,7 +88,7 @@ const Accueil = () => {
             <CardButton href="#">Lire la suite</CardButton>
           </Card>
 
-          <Card image={musicPlayer1}>
+          <Card image={sport2}>
             <CardTitle name="comments">Portes-ouvertes</CardTitle>
             <CardText>
               Facilisis takimata diam quod amet diam sed no justo. Suscipit
@@ -97,7 +99,7 @@ const Accueil = () => {
             <CardButton href="#">Lire la suite</CardButton>
           </Card>
 
-          <Card image={musicPlayer2}>
+          <Card image={sport2}>
             <CardTitle name="fly" collection="brands">
               Voyages
             </CardTitle>
@@ -128,7 +130,7 @@ const Accueil = () => {
           stet facilisi consetetur lorem.
         </Heading>
         <Content cols="2">
-          <Card row image={musicPlayer3}>
+          <Card row image={sport2}>
             <CardTitle name="map">Dates d'inscription</CardTitle>
             <CardText>
               At diam sea sea voluptua dolor magna sit nostrud et at erat.
@@ -141,7 +143,7 @@ const Accueil = () => {
             </CardButton>
           </Card>
 
-          <Card row image={musicPlayer3}>
+          <Card row image={sport2}>
             <CardTitle>Premier trimestre</CardTitle>
             <CardText>
               Sed at clita accusam elitr invidunt sit dolores no sed dolor.
@@ -154,7 +156,7 @@ const Accueil = () => {
             </CardButton>
           </Card>
 
-          <Card row image={musicPlayer3}>
+          <Card row image={sport2}>
             <CardTitle>été</CardTitle>
             <CardText>
               In delenit ut autem volutpat ipsum iusto eos nisl et eirmod vero
@@ -167,7 +169,7 @@ const Accueil = () => {
             </CardButton>
           </Card>
 
-          <Card row image={musicPlayer3}>
+          <Card row image={sport2}>
             <CardTitle>Automne</CardTitle>
             <CardText>
               In delenit ut autem volutpat ipsum iusto eos nisl et eirmod vero
@@ -180,7 +182,7 @@ const Accueil = () => {
             </CardButton>
           </Card>
 
-          <Card row image={musicPlayer3}>
+          <Card row image={sport2}>
             <CardTitle>Hiver</CardTitle>
             <CardText>
               In delenit ut autem volutpat ipsum iusto eos nisl et eirmod vero

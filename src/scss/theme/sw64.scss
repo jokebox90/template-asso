@@ -1,0 +1,55 @@
+// src/scss/_theme.scss
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:ital@0;1&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// THEME: Opéra
+$color1:                      #2cf24a;
+$color2:                      #bb452a;
+$color3:                      #5fcbf2;
+$color4:                      #f1d274;
+$color5:                      #b8d846;
+$color:                       #fcfcfc;
+
+@import "../shades";
+
+$main-bg-color:               $color4-300;
+$main-color:                  $color;
+
+$navbar-bg-color:             $color1-600;
+$navbar-font-color:           $color;
+$navbar-link-hover:           $color4-200;
+$navbar-link-hover-bg:        $color1-700;
+$navbar-link-active:          $color4-300;
+$navbar-link-active-bg:       $color1-700;
+$navbar-link-active-hover:    $color4-200;
+$navbar-link-active-hover-bg: $color1-800;
+
+$headings-font-size:          1.8rem;
+$headings-small-font-size:    1.4rem;
+$headings-font-family:        Oswald;
+$headings-font-style:         null;
+$headings-font-weight:        bold;
+$headings-line-height:        1.2;
+$headings-color:              $color2;
+$headings-lead-color:         #333;
+
+$brand-font-color:            $color4-500;
+$brand-family:                Oswald;
+$brand-font-size:             1.8rem;
+
+$card-color:                  #333;
+$card-bg-color:               $color3-400;
+$card-title-size:             1.4rem;
+$card-title-color:            $color2;
+$card-button-color:           #333;
+$card-button-bg-color:        $color5-500;
+$card-button-hover:           #fafafa;
+$card-button-hover-bg:        $color5-400;
+
+$hero-headings-color:         $color4;
+$hero-headings-size:          3rem;
+$hero-color:                  #fafafa;
+$hero-font-size:              1rem;
+$hero-headings-weight:        700;
+$hero-bg-color:               $color2;
